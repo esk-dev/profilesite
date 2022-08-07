@@ -3,7 +3,7 @@
     grid-area: sidenav;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
     .logo {
 
         img {
@@ -16,7 +16,7 @@
 
     nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         text-align: center;
         align-items: center;
 
@@ -26,7 +26,7 @@
             display: block;
             position: relative;
             text-decoration: none;
-
+            width: 100px;
             i {
                 transition: all 0.2s ease-out;
             }
@@ -56,20 +56,24 @@
 
             &:first-child {
                 &::after {
-                    content: 'HOME';
+                    content: 'Home';
                 }
             }
         }
 
         a.about-link {
             &:after {
-                content: 'ABOUT';
+                content: 'About';
             }
         }
-
+        a.projects-link {
+            &:after {
+                content: 'Projects';
+            }
+        }
         a.contact-link {
             &:after {
-                content: 'CONTACT';
+                content: 'Contact';
             }
         }
     }
