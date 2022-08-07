@@ -1,5 +1,7 @@
 @import '../scss/mixins.scss';
 .home-page {
+    height: max-content;
+    margin: auto auto;
     .text-zone {
         display: flex;
         flex-direction: column;

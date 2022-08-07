@@ -1,9 +1,9 @@
 .nav-bar {
     background: #181818;
     grid-area: sidenav;
-    height: 100%;
     display: grid;
     justify-items: center;
+    padding-top: 5px;
     .logo {
 
         img {
