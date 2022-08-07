@@ -15,10 +15,8 @@
 .container {
     width: 100%;
     will-change: contents;
-    height: 100%;
-    min-height: 100%;
+    height: max-content;
     margin: 0 auto;
-    transform: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }

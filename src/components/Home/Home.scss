@@ -1,3 +1,4 @@
+@import '../scss/mixins.scss';
 .home-page {
     .text-zone {
         display: flex;
@@ -7,18 +8,14 @@
         padding: 20px;
 
         h1 {
-            color: #ffff;
-            font-size: 45px;
-            margin: 0;
-            font-weight: 400;
-            animation: 1s 1s backwards;
+            @include title-page;
         }
 
         h2 {
             color: #8d8d8d;
             margin-top: 20px;
             font-weight: 400;
-            font-size: 11px;
+            font-size: 25px;
             letter-spacing: 3px;
             animation: fadeIn 1s 1.4s backwards;
         }

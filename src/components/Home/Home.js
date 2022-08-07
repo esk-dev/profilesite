@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './Home.scss'
+import StackLogos from '../StackLogos/StackLogos';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -35,6 +36,7 @@ const Home = () => {
         <h2> Java Script / Angular</h2>
         <Link to="/contact" className="flat-button">CONTACT ME</Link>
       </div>
+      <StackLogos/>
     </div>
   );
 }

@@ -1,0 +1,10 @@
+@import '../scss/mixins.scss';
+.about-page {
+  .text-zone {
+    padding: 20px;
+    h1 {
+      @include title-page;
+      text-align: center;
+    }
+  }
+}
