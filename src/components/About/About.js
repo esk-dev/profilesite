@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="container about-page">
       <div className="text-zone">
-        <h1>About me and my exoerience</h1>
+        <h1>About me and my experience</h1>
       </div>
     </div>
   )

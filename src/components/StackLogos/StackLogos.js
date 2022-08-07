@@ -1,33 +1,6 @@
 import React from 'react';
-import { useEffect, useRef } from 'react';
 import './StackLogos.scss';
-import gsap from 'gsap-trial';
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
-import { LogoA } from '../../assets/angular.svg';
 function StackLogos() {
-  useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin);
-    gsap.fromTo(
-      'path',
-      { 
-        fill: 'none',
-      },
-      {
-        fill: '',
-        duration: 2,
-      }
-    );
-    gsap.fromTo(
-      'path',
-      { 
-        drawSVG: '0%',
-      },
-      {
-        drawSVG: '100%',
-        duration: 2,
-      }
-    );
-  }, []);
 
   return (
     <div className="logo-container">

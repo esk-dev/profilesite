@@ -1,5 +1,17 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import {
+  TransitionGroup,
+  CSSTransition
+} from "react-transition-group";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useLocation,
+  useParams
+} from "react-router-dom";
 import Sidebar from '../Sidebar/Sidebar'
 import './Layout.scss'
 import Home from '../Home/Home'

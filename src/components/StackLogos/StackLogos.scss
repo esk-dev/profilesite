@@ -3,10 +3,6 @@
     svg {
       width: 100px;
       height: 100px;
+      animation: bounceIn 1s 1s;
     }     
-}
-.svg-container {
-  animation: bounceIn 2s 2s;
-  stroke:white;
-  stroke-width: 0.5;
 }

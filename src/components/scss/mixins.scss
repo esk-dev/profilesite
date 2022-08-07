@@ -5,3 +5,23 @@
   font-weight: 600;
   animation: 1s 1s backwards;
 }
+
+@mixin a-icon-styles {
+  font-size: 22px;
+  color: #4d4d4e;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  transition: all 0.2s ease-out;
+}
+@mixin a-after-text {
+  content: '';
+  display: block;
+  letter-spacing: 3px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
