@@ -62,6 +62,12 @@
                 content: 'Contact';
             }
         }
+
+        a.active {
+            svg {
+              color: #ffd700;
+            }
+          }
     }
 
     ul {
