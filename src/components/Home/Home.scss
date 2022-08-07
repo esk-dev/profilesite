@@ -11,6 +11,7 @@
             font-size: 45px;
             margin: 0;
             font-weight: 400;
+            animation: 1s 1s backwards;
         }
 
         h2 {
@@ -19,6 +20,7 @@
             font-weight: 400;
             font-size: 11px;
             letter-spacing: 3px;
+            animation: fadeIn 1s 1.4s backwards;
         }
 
         .flat-button {
@@ -28,7 +30,7 @@
             text-decoration: none;
             padding: 10px 10px;
             border: 1px solid #ffd700;
-            animation: 1s 1s backwards;
+            animation: fadeIn 1s 1.8s backwards;
 
 
             &:hover {

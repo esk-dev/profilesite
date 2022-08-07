@@ -16,7 +16,6 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.3.0",
     "react-script": "^2.0.5",
-    "sass": "^1.54.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
