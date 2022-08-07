@@ -1,0 +1,12 @@
+.logo-container {
+  padding: 20px;
+    svg {
+      width: 100px;
+      height: 100px;
+    }     
+}
+.svg-container {
+  animation: bounceIn 2s 2s;
+  stroke:white;
+  stroke-width: 0.2;
+}
