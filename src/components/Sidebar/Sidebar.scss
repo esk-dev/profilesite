@@ -67,6 +67,11 @@
             svg {
               color: #ffd700;
             }
+
+            &::after {
+                color: #ffd700;
+                opacity: 1;
+            }
           }
     }
 
