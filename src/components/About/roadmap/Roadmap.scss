@@ -1,44 +1,55 @@
 .Roadmap {
     position: relative;
-    width: 800px;
-    height: 500px;
+  .box {
+      position: relative;
+      margin-left: 50px;
     .recatngels {
-        fill: none;
-        stroke-width: 2;
-        stroke: white;
-        position: absolute;
-        width: 164px;
-        height: 80px;
+      fill: none;
+      stroke-width: 2;
+      stroke: white;
+      width: 164px;
+      height: 80px;
     }
     .rhombus {
-        fill: none;
-        stroke-width: 2;
-        stroke: white;
-        position: absolute;
-        width: 150px;
-        height: auto;
+      fill: none;
+      stroke-width: 2;
+      stroke: white;
+      width: 104px;
+      height: 104px;
     }
     .arrows {
-        width: 200px;
-        height: 80px;
+      width: 200px;
+      height: 80px;
     }
     #rect1 {
-        transform: translateY(220px);
+      transform: translateY(130px);
     }
     #arrow {
-        transform: translate(103px, 198px) rotate(289deg);
+      transform: translate(-65px, 104px ) rotate(289deg);
     }
     #rect2 {
-        transform: translate(0px, 128px);
+      transform: translate(-164px, 36px);
     }
     #arrow2 {
-        transform: translate(102px, 94px) rotate(2deg);
+      transform: translate(-234px, 18px) rotate(2deg);
     }
-
     #rect3 {
-        transform: translate(32px, 65px);
+      transform: translate(-304px, -10px);
+    }
+    #arrow3 {
+      transform: translate(-366px, -22px) rotate(306deg);
     }
     #rhombus {
-        transform: translate(370px, 53px) rotate(135deg);
+      transform: translate(680px, -137px) rotate(135deg);
     }
+    #arrow4 {
+      transform: translate(643px, -139px) rotate(56deg);
+    }
+    #arrow5 {
+      transform: translate(376px, -67px) rotate(334deg);
+    }
+    #rect4 {
+        transform:  translate(314px, -72px);
+    }
+  }
 }
