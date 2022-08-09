@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Roadmap.scss';
+import anime from 'animejs/lib/anime.es.js';
+
 function Roadmap() {
+  useEffect(() => {
+    anime({
+      targets: '.box svg text',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 1500,
+      delay: function (el, i) {
+        return i * 250;
+      },
+      direction: 'alternate',
+      loop: true,
+    });
+  });
+
   return (
     <div className="Roadmap">
       <div className="box">
@@ -8,9 +24,14 @@ function Roadmap() {
           className="recatngels"
           xmlns="http://www.w3.org/2000/svg"
           id="rect1"
-          viewbox="0 0 15 15"
         >
-          <rect x="10" y="2.5" rx="20" ry="20" width="90%" height="90%" />
+          {/* <rect x="10" y="2.5" rx="20" ry="20" width="90%" height="90%" /> */}
+          <path
+            d="M 20 40 L 250 40 
+           L 250 150 L 20 150 
+           z"
+          />
+          <text x="0" y="50" font-size="15px" stroke="white" stroke-width="0.5" fill="none">This is SVG Text</text> 
         </svg>
         <svg
           className="arrows"
