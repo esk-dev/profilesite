@@ -5,40 +5,73 @@ import anime from 'animejs/lib/anime.es.js';
 function Roadmap() {
   useEffect(() => {
     anime({
-      targets: '.box svg text',
+      targets: '.box svg path',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
-      duration: 1500,
+      duration: 3500,
       delay: function (el, i) {
         return i * 250;
       },
       direction: 'alternate',
-      loop: true,
+      loop: false,
     });
   });
 
   return (
     <div className="Roadmap">
       <div className="box">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        className="test"
+        viewBox="0 0"
+      >
+        <defs>
+          <path
+              stroke='white'
+              stroke-width="0.5"
+              id="arrow"
+              fill="#2e58a6"
+              d="M58.9,44.09c-4-2.53-7.51-5.59-11.47-8.12-2.37-1.52-4.41,1-2,2.55s4.46,3.11,6.64,4.73a1.64,1.64,0,0,0-.43,0c-15.2.75-16.91-13.07-23.41-23A25.08,25.08,0,0,0,5.08,9.08c-2.51.2-.14,4,1.81,3.86,6.54-.51,13.14,1.7,17.24,7,3.35,4.28,4.86,9.68,7.45,14.38C35.72,41.78,42.46,46.59,50.9,47l-7.13,4.36c-2,1.22,1.25,4.45,3,3.37l12.63-7.73C60.58,46.34,59.77,44.65,58.9,44.09Z"
+            />
+          <path
+            fill="none"
+            stroke='white'
+            stroke-width="0.5"
+            id="rectangel"
+            d="M 20 40 L 250 40 
+            L 250 150 L 20 150 
+            z"
+          />
+          <path
+            id="arrow2"
+            fill="#2e58a6"
+            stroke='white'
+            stroke-width="0.5"
+            d="M57.22,11.88c-6.11-.64-12-2.22-18.16-2.86-2.86-.3-.86,3.54,1.23,3.76,3.67.38,7.27,1.11,10.89,1.76-20.7,4.51-39.12,17.73-47.1,37-.64,1.55,2.4,4.88,3.3,2.7,7.32-17.69,24.13-30.11,42.89-35a93.39,93.39,0,0,0-6.61,8c-1.26,1.79,2.52,4.55,3.76,2.78,3.71-5.27,8.58-9.68,12.29-15C60.78,13.64,58.61,12,57.22,11.88Z"
+          />
+        </defs>
+        <use href="#rectangel" x="0" />
+        <use href="#arrow" x="250" y="80"/>
+        <use href="#rectangel" x="300" y="-20"/>
+        <use href="#arrow2" x="550" y="0"/>
+      </svg> 
+      {/* <svg>
         <svg
           className="recatngels"
           xmlns="http://www.w3.org/2000/svg"
           id="rect1"
         >
-          {/* <rect x="10" y="2.5" rx="20" ry="20" width="90%" height="90%" /> */}
           <path
             d="M 20 40 L 250 40 
            L 250 150 L 20 150 
            z"
           />
-          <text x="0" y="50" font-size="15px" stroke="white" stroke-width="0.5" fill="none">This is SVG Text</text> 
         </svg>
         <svg
           className="arrows"
           id="arrow"
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
-          viewBox="0 0 64 64"
         >
           <path
             fill="#2e58a6"
@@ -57,7 +90,6 @@ function Roadmap() {
           id="arrow2"
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
-          viewBox="0 0 64 64"
         >
           <path
             fill="#2e58a6"
@@ -76,7 +108,6 @@ function Roadmap() {
           id="arrow3"
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
-          viewBox="0 0 64 64"
         >
           <path
             fill="#2e58a6"
@@ -87,16 +118,14 @@ function Roadmap() {
           className="rhombus"
           xmlns="http://www.w3.org/2000/svg"
           id="rhombus"
-          viewbox="0 0 180 180"
         >
-          <rect x="0.5" y="0.5" width="95%" height="95%" />
+          <use href="#rect1" />
         </svg>
         <svg
           className="arrows"
           id="arrow4"
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
-          viewBox="0 0 64 64"
         >
           <path
             fill="#2e58a6"
@@ -108,7 +137,6 @@ function Roadmap() {
           id="arrow5"
           xmlns="http://www.w3.org/2000/svg"
           data-name="Layer 1"
-          viewBox="0 0 64 64"
         >
           <path
             fill="#2e58a6"
@@ -122,6 +150,7 @@ function Roadmap() {
         >
           <use href="#rect1" />
         </svg>
+      </svg> */}
       </div>
     </div>
   );
