@@ -1,6 +1,44 @@
 .Roadmap {
-    svg {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    .recatngels {
         fill: none;
+        stroke-width: 2;
         stroke: white;
+        position: absolute;
+        width: 164px;
+        height: 80px;
+    }
+    .rhombus {
+        fill: none;
+        stroke-width: 2;
+        stroke: white;
+        position: absolute;
+        width: 150px;
+        height: auto;
+    }
+    .arrows {
+        width: 200px;
+        height: 80px;
+    }
+    #rect1 {
+        transform: translateY(220px);
+    }
+    #arrow {
+        transform: translate(103px, 198px) rotate(289deg);
+    }
+    #rect2 {
+        transform: translate(0px, 128px);
+    }
+    #arrow2 {
+        transform: translate(102px, 94px) rotate(2deg);
+    }
+
+    #rect3 {
+        transform: translate(32px, 65px);
+    }
+    #rhombus {
+        transform: translate(370px, 53px) rotate(135deg);
     }
 }

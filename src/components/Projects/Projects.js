@@ -1,6 +1,6 @@
 import React from 'react'
 import './Projects.scss'
-import Project1 from '../../assets/project1.png'
+import Project1 from '../../assets/swirly.svg'
 
 function Projects() {
   return (
