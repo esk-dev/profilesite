@@ -1,5 +1,4 @@
 @mixin title-page {
-  color: #ffff;
   font-size: 52px;
   margin: 0;
   font-weight: 600;
@@ -8,7 +7,7 @@
 
 @mixin a-icon-styles {
   font-size: 22px;
-  color: #4d4d4e;
+  color: $text-color;
   display: block;
   position: relative;
   text-decoration: none;
@@ -26,3 +25,9 @@
   opacity: 0;
   transition: all 0.2s ease-out;
 }
+
+$primary-color: #33658A;
+$second-color: #86BBD8;
+$background-color: rgb(236, 236, 236);
+$icon-color: #4d4d4e;
+$text-color: #303030;

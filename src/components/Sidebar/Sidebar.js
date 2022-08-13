@@ -1,24 +1,27 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
   faGoogle,
-} from '@fortawesome/free-brands-svg-icons';
-import './Sidebar.scss';
+} from "@fortawesome/free-brands-svg-icons";
+import "./Sidebar.scss";
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      {/* <Link className='logo' to='/'>
-        <img
-          src={'https://github.com/bobangajicsm/react-portfolio-website/blob/master/src/assets/images/logo-s.png?raw=true'} alt="logo"
-        />
-      </Link> */}
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink

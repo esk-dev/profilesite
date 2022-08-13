@@ -1,123 +1,124 @@
-@import '../scss/mixins.scss';
+@import "../scss/mixins.scss";
 .nav-bar {
-    background: #181818;
-    grid-area: sidenav;
-    display: grid;
-    justify-items: center;
-    padding-top: 5px;
-    .logo {
+  grid-area: sidenav;
+  display: grid;
+  justify-items: center;
+  padding: 5px;
+  box-shadow: 0px 7px 5px -8px rgb(0 0 0 / 50%),
+    0px 2px 4px rgb(211 211 211 / 10%), 0px 4px 8px rgb(211 211 211 / 10%),
+    0px 8px 16px rgb(211 211 211 / 10%);
+  .logo {
+    img {
+      display: block;
+      width: 24px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
 
-        img {
-            display: block;
-            width: 24px;
-            height: auto;
-            margin: 0 auto;
+  nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    a {
+      @include a-icon-styles;
+
+      &:hover {
+        color: $primary-color;
+
+        svg {
+          color: $primary-color;
         }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        @include a-after-text;
+      }
+
+      &:first-child {
+        &::after {
+          content: "Home";
+        }
+      }
     }
 
-    nav {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
+    a.about-link {
+      &:after {
+        content: "About";
+      }
+    }
+    a.projects-link {
+      &:after {
+        content: "Projects";
+      }
+    }
+    a.contact-link {
+      &:after {
+        content: "Contact";
+      }
+    }
 
-        a {
-            @include a-icon-styles;
+    a.active {
+      svg {
+        color: $primary-color;
+      }
 
-            &:hover {
-                color: #ffd700;
+      &::after {
+        color: $primary-color;
+        opacity: 1;
+      }
+    }
+  }
 
-                svg {
-                    color: #ffd700;
-                }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
 
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                @include a-after-text;
-            }
-
-            &:first-child {
-                &::after {
-                    content: 'Home';
-                }
-            }
-        }
-
-        a.about-link {
-            &:after {
-                content: 'About';
-            }
-        }
-        a.projects-link {
-            &:after {
-                content: 'Projects';
-            }
-        }
-        a.contact-link {
-            &:after {
-                content: 'Contact';
-            }
-        }
-
-        a.active {
-            svg {
-              color: #ffd700;
-            }
-
-            &::after {
-                color: #ffd700;
-                opacity: 1;
-            }
+    li {
+      a {
+        @include a-icon-styles;
+        &:hover {
+          svg {
+            color: $primary-color;
           }
-    }
 
-    ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-
-        li {
-            a {
-                @include a-icon-styles;
-                &:hover {
-                    svg {
-                        color: #ffd700;
-                    }
-
-                    &:after {
-                        opacity: 1;
-                    }
-                }
-                &:after {
-                    @include  a-after-text;
-                }
-
-                &:first-child {
-                    &::after {
-                        content: 'LinkedIn';
-                    }
-                }
-            }
-
-            a.github {
-                &:after {
-                    content: "Github";
-                }
-            }
-
-            a.google {
-                &:after {
-                    content: "Google";
-                }
-            }
+          &:after {
+            opacity: 1;
+          }
         }
+        &:after {
+          @include a-after-text;
+        }
+
+        &:first-child {
+          &::after {
+            content: "LinkedIn";
+          }
+        }
+      }
+
+      a.github {
+        &:after {
+          content: "Github";
+        }
+      }
+
+      a.google {
+        &:after {
+          content: "Google";
+        }
+      }
     }
+  }
 }

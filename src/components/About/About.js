@@ -1,23 +1,51 @@
-import React from 'react'
-import './About.scss'
-import Roadmap from './roadmap/Roadmap';
-
+import React, { useState, useEffect } from "react";
+import "./About.scss";
+import AnimatedLetters from "../AnimatedLetters";
 function About() {
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 1000);
+  }, []);
+
   return (
     <div className="container about-page">
-      <Roadmap />
       <div className="text-zone">
-        <h1>About me and my experience</h1>
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={`О себе`}
+            idx={1}
+          />
+        </h1>
         <div className="content">
-          <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+          <p>
+            Я - начинающий frontend разработчик, на данном этапе есть опыт
+            стажировки в отделе веб-разработки в компании Yota, где я
+            познакомился с фреймворком Angular.
+          </p>
+
+          <p>Задачи выполняемые мной на стажировке:</p>
+          <ul>
+            <li>
+              Разработка landing page, c валидируемой формой обратной связи,
+              анимацией. Использовалась библиотека основаная на Angular
+              Material.
+            </li>
+
+            <li>Верстка e-mail рассылок</li>
+          </ul>
+
+          <p>
+            lorem ipsum lorem isum lorem ipsum lorem isum lorem ipsum lorem isum
+            lorem ipsum lorem isum lorem ipsum lorem isum lorem ipsum lorem isum
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default About;
