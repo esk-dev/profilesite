@@ -1,8 +1,16 @@
 .logo-container {
   padding: 20px;
+  display: flex;
+  justify-content: flex-start;
     svg {
       width: 100px;
       height: 100px;
       animation: fadeIn 1.5s 2s backwards
     }     
+}
+
+@media screen and (max-width: 1024px ) {
+  .logo-container {
+    justify-content: center;
+  }
 }

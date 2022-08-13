@@ -2,6 +2,8 @@ $primary-color: #86BBD8;
 
 @import 'animate.css/animate.css';
 @import '~loaders.css/src/animations/ball-rotate.scss';
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;600&family=News+Cycle:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'Helvetica Neue';
@@ -9,29 +11,14 @@ $primary-color: #86BBD8;
     font-weight: 400;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'La Belle Aurore';
-    src: url('https://fonts.cdnfonts.com/s/15701/LaBelleAurore.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Amatic SC';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.gstatic.com/s/amaticsc/v24/TUZyzwprpvBS1izr_vOEDuSfQZQ.woff2') format('woff2');
-}
 .loader-hidden {
     display: none;
 }
 .loader-active {
     display: block;
-    margin: auto auto;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    margin: auto 50%;
     width: 50px;
-}
-input,
-textarea {
-    font-family: 'Helvetica Neue', sans-serif;
 }

@@ -1,7 +1,6 @@
 @mixin title-page {
   font-size: 52px;
-  margin: 0;
-  font-weight: 600;
+  font-weight: 800;
   animation: 1s 1s backwards;
 }
 
@@ -20,6 +19,7 @@
   display: block;
   letter-spacing: 3px;
   font-size: 12px;
+  font-weight: 600;
   width: 100%;
   text-align: center;
   opacity: 0;
