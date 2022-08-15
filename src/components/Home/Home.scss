@@ -21,20 +21,8 @@
         }
 
         .flat-button {
-            color: $second-color;
-            font-size: 13px;
-            letter-spacing: 4px;
-            text-decoration: none;
-            padding: 10px 10px;
-            border: 1px solid $second-color;
+            @include btn;
             animation: fadeIn 1s 1.8s backwards;
-
-
-            &:hover {
-                color: $text-color;
-                background-color: $second-color;
-                transition: 0.3s;
-            }
         }
     }
 }
@@ -43,7 +31,7 @@
     .home-page{
         .text-zone {
             align-items: center;
-           
+
             h1 {
                 text-align: center;
                 font-size: 2.5rem;
