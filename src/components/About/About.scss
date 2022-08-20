@@ -2,7 +2,7 @@
 .about-page {
   .text-zone {
     padding: 20px;
-    width: 600px;
+    width: 50%;
     h1 {
       @include title-page;
       text-align: left;
@@ -10,8 +10,8 @@
     }
 
     p {
-      font-weight: 200;
-      font-size: 18px;
+      font-weight: 400;
+      font-size: 24px;
       animation: pulse 1s;
       color: #141414;
       &:nth-of-type(1) {
@@ -29,7 +29,7 @@
     ul {
       font-weight: 400;
       list-style-type: circle 2;
-      font-size: 18px;
+      font-size: 24px;
       color: #141414;
       li {
         animation: pulse 1s;

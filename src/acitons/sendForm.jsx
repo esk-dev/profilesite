@@ -1,13 +1,11 @@
 import axios from "axios";
+const url = 'http://localhost:7000/api/telegram';
 
 const sendForm = async (name, email, message) => {
+  const contacts = { name, email, message };
   try {
     axios
-      .post("http://localhost:7000/api/telegram", {
-        name,
-        email,
-        message,
-      })
+      .post(url, contacts)
       .then(
         (response) => {
           console.log(response);

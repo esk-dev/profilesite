@@ -17,7 +17,7 @@ function About() {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={`О себе`}
-            idx={1}
+            idx={5}
           />
         </h1>
         <p>

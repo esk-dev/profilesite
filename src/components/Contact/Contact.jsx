@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.scss";
 import sendForm from '../../acitons/sendForm';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 export default function Contact() {
+  const btn = useRef(null);
   return (
     <div className="container contact-form">
       <h1 className="title">Контакты</h1>
@@ -26,6 +27,10 @@ export default function Contact() {
           sendForm(values.name, values.email, values.message)
           console.log(values);
           setSubmitting(false);
+          setTimeout(() => {
+            btn.current.style.transform = 'scale(1.1)';
+            btn.current.style.transform = 'scale(1.0)';
+          }, 1);
         }}
       >
         <Form className="form" noValidate>
@@ -70,7 +75,7 @@ export default function Contact() {
               <ErrorMessage component="div" className="form-field__error" name="message" />
             </div>
           </div>
-          <button className="form-btn" type="submit">
+          <button ref={btn} className="form-btn" type="submit">
             Submit
           </button>
         </Form>
