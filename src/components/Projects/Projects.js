@@ -1,20 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import ProjectComponent from "../ProjectComponent/ProjectComponent";
+import AnimatedLetters from "../AnimatedLetters";
 import "./Projects.scss";
-import Project1 from "../../assets/project1.png";
+import project1 from "../../assets/project1.png";
 
 function Projects() {
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 1500);
+  }, []);
   return (
     <div className="container projects-page">
       <div className="text-zone">
-        <h1>Мои проекты</h1>
-        <div className="projects-container">
-          <div className="project-card">
-            <h2>Project 1</h2>
-            <div className="image-card project1">
-              <img src={Project1}/>
-            </div>
-          </div>
-        </div>
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={`Мои проекты`}
+            idx={5}
+          />
+        </h1>
+        <ProjectComponent
+          title={"ngForecast"}
+          screen={project1}
+          link={"https://google.com"}
+          text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
+          tech={[
+            {'id': 0, 'text': 'Angular'},
+            {'id': 1, 'text': 'RxJs'}
+          ]}
+        />
+        <ProjectComponent
+          title={"Title"}
+          screen={project1}
+          link={"https://google.com"}
+          text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem m lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
+        />
+        <ProjectComponent
+          title={"Title"}
+          screen={project1}
+          link={"https://google.com"}
+          text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem m lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
+        />
       </div>
     </div>
   );

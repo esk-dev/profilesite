@@ -1,41 +1,100 @@
 import React, { useState, useEffect } from "react";
 import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters";
+import StackLogos from "../StackLogos/StackLogos";
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass("text-animate-hover");
-    }, 1000);
-  }, []);
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
 
   return (
     <div className="container about-page">
-      <div className="text-zone">
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={`О себе`}
-            idx={5}
-          />
-        </h1>
-        <p>
-          Я - начинающий frontend разработчик, на данном этапе есть опыт
-          стажировки в отделе веб-разработки в компании Yota, где я
-          познакомился с фреймворком Angular.
-        </p>
-
-        <p>Задачи выполняемые мной на стажировке:</p>
-        <ul>
-          <li>
-            Разработка landing page, c валидируемой формой обратной связи,
-            анимацией. Использовалась библиотека основаная на Angular
-            Material.
-          </li>
-
-          <li>Верстка e-mail рассылок</li>
-        </ul>
+      <h1>
+        <AnimatedLetters
+          letterClass={letterClass}
+          strArray={`О себе`}
+          idx={1}
+        />
+      </h1>
+      <div className="content-zone">
+        <div className="text-zone">
+          <p>
+            Привет! Меня зовут Егор, и мне нравится создавать вещи, которые
+            живут в Интернете.
+            <br></br>
+            <br></br>
+            Мой интерес к веб-разработке начался в 2021 году, когда я решил
+            попробовать сделать сайт как выпускной проект — создание нескольких
+            страниц научило меня многому в HTML и CSS! Также я узнал о том что
+            JS имеет более серьезные возможности чем анимация страниц.
+            <br></br>
+            Так я начал изучение веб-разработки.
+            <br></br>
+            <br></br>
+            Перенесемся в сегодняшний день, я имел опыт постажироваться в отделе
+            веб-разработки в компании Yota, где я познакомился с фреймворком
+            Angular и более серьезно углубился в создание веба. Из проектов
+            сделанных там, я могу выделить создание лендинга c использованием
+            Angular Material.
+          </p>
+          <h3>Мои хард скиллы:</h3>
+          <ul>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`RxJs`}
+                idx={1}
+              />
+            </li>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`TypeScript`}
+                idx={5}
+              />
+            </li>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`Angular Material`}
+                idx={10}
+              />
+            </li>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`SCSS`}
+                idx={15}
+              />
+            </li>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`Node JS (Express)`}
+                idx={25}
+              />
+            </li>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`Mongo DB`}
+                idx={35}
+              />
+            </li>
+            <li>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`React, в начале изучения`}
+                idx={45}
+              />
+            </li>
+          </ul>
+        </div>
+        <StackLogos />
       </div>
     </div>
   );

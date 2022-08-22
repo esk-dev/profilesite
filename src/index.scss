@@ -1,5 +1,5 @@
 @import './app.scss';
-@import './components/scss/mixins.scss';
+@import './mixins.scss';
 
 html {
   height: 100%;
@@ -52,7 +52,7 @@ body {
   line-height: 1.5;
   background: $background-color;
   color: $text-color;
-  font-family: 'News Cycle', 'Helvetica Neue', 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Helvetica Neue', 'News Cycle', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

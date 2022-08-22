@@ -1,0 +1,81 @@
+@import "../../mixins.scss";
+.project-card {
+  margin: 15px auto;
+  height: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  .image-box {
+    grid-column: 1/8;
+    grid-area: 1 / 1 / -1 / 7;
+    img {
+      animation: backInLeft 2s backwards ease-in-out;
+      width: 100%;
+      height: auto;
+      margin: auto auto;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px -2px rgba(0, 0, 0, 0.5),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+    }
+  }
+  img:hover {
+    filter: blur(2px) brightness(0.8);
+  }
+  .content-box {
+    display: flex;
+    text-align: right;
+    grid-column: 7/-1;
+    grid-area: 1 / 6 / -1 / -2;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    .content {
+      h4 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .text-box {
+        animation: backInRight 2s backwards ease-in-out;
+        background-color: rgb(134 187 216 / 0.5);
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        color: $text-color;
+        box-shadow: 0px 0px 0px -2px rgba(0, 0, 0, 0.5),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 5px;
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    .image-box {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+    }
+    .content-box {
+
+    }
+  }
+}

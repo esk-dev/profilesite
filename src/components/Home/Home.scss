@@ -1,5 +1,6 @@
-@import '../scss/mixins.scss';
+@import '../../mixins.scss';
 .home-page {
+    width: 100%;
     .text-zone {
         display: flex;
         flex-direction: column;
@@ -34,10 +35,10 @@
 
             h1 {
                 text-align: center;
-                font-size: 2.5rem;
+
             }
             h2 {
-                font-size: 2rem;
+
             }
         }
     }

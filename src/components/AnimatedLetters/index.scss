@@ -1,14 +1,14 @@
-@import '../scss/mixins.scss';
+@import '../../mixins.scss';
 .text-animate {
     display: inline-block;
     opacity: 0;
     animation: bounceIn 1s;
     animation-fill-mode: forwards;
-    min-width: 10px;
+    min-width: 5px;
 }
 
 .text-animate-hover {
-    min-width: 10px;
+    min-width: 5px;
     display: inline-block;
     animation-fill-mode: both;
 
@@ -18,8 +18,8 @@
     }
 }
 
-@for $i from 1 through 43 {
+@for $i from 1 through 2000 {
     .text-animate._#{$i} {
-        animation-delay: #{$i*30}ms;
+        animation-delay: #{$i*50}ms;
     }
 }

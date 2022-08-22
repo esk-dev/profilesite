@@ -48,7 +48,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <ul>
+        {/* <ul>
           <li>
             <a
               target="_blank"
@@ -79,7 +79,7 @@ const Sidebar = () => {
               <FontAwesomeIcon icon={faGoogle} color="#4d4d4e" />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </div>
   );
