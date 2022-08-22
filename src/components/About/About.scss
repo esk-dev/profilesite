@@ -1,4 +1,4 @@
-@import "../../mixins.scss";
+@import '../../mixins.scss';
 .about-page {
   padding: 20px;
   width: 80%;
@@ -9,21 +9,28 @@
   .content-zone {
     display: flex;
     flex-direction: row;
-    font-size: 24px;
+    justify-content: space-evenly;
+    font-size: 18px;
     font-weight: 400;
-
+    .text-zone {
+      
+    }
     ul {
       list-style-type: none;
+      display: grid;
+      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .about-page {
+    width: 100%;
     .content-zone {
       flex-direction: column;
-      text-align: justify;
+      text-align: left;
     }
   }
-
 }

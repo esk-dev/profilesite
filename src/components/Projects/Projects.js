@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProjectComponent from "../ProjectComponent/ProjectComponent";
 import AnimatedLetters from "../AnimatedLetters";
 import "./Projects.scss";
-import project1 from "../../assets/project1.png";
+// import project1 from "../../assets/project1.png";
 
 function Projects() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -24,7 +24,7 @@ function Projects() {
         </h1>
         <ProjectComponent
           title={"ngForecast"}
-          screen={project1}
+          
           link={"https://google.com"}
           text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
           tech={[
@@ -34,13 +34,13 @@ function Projects() {
         />
         <ProjectComponent
           title={"Title"}
-          screen={project1}
+          
           link={"https://google.com"}
           text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem m lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
         />
         <ProjectComponent
           title={"Title"}
-          screen={project1}
+          
           link={"https://google.com"}
           text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem m lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
         />
