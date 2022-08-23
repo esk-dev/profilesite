@@ -24,7 +24,7 @@ function Projects() {
         </h1>
         <ProjectComponent
           title={"ngForecast"}
-          
+          screen={'https://alvarotrigo.com/blog/assets/imgs/2021-10-16/lynn-fisher-web-developer-portfolio-example.webp'}
           link={"https://google.com"}
           text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
           tech={[
@@ -34,13 +34,13 @@ function Projects() {
         />
         <ProjectComponent
           title={"Title"}
-          
+          screen={'https://alvarotrigo.com/blog/assets/imgs/2021-10-16/lynn-fisher-web-developer-portfolio-example.webp'}
           link={"https://google.com"}
           text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem m lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
         />
         <ProjectComponent
           title={"Title"}
-          
+          screen={'https://alvarotrigo.com/blog/assets/imgs/2021-10-16/lynn-fisher-web-developer-portfolio-example.webp'}
           link={"https://google.com"}
           text={"Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem Lorem m lorem Lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem"}
         />

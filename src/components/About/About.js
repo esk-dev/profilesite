@@ -85,13 +85,6 @@ function About() {
                 idx={35}
               />
             </li>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`React, в начале изучения`}
-                idx={45}
-              />
-            </li>
           </ul>
         </div>
         <StackLogos />
