@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import StackLogos from "../StackLogos/StackLogos";
+import { Canvas, useFrame } from "@react-three/fiber";
+
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 4000);
+  }, []);
 
   return (
     <div className="container about-page">
@@ -87,7 +89,11 @@ function About() {
             </li>
           </ul>
         </div>
-        <StackLogos />
+        <Canvas>
+          <ambientLight />
+          <pointLight position={[10,10,10]} />
+          <StackLogos />
+        </Canvas>
       </div>
     </div>
   );

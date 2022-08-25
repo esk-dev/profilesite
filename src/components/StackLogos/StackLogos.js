@@ -1,5 +1,6 @@
-import React from 'react';
-import './StackLogos.scss';
+import React, { useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import "./StackLogos.scss";
 import {
   faAngular,
   faCss3,
@@ -7,33 +8,17 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-function StackLogos() {
-
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MeshStandardMaterial } from "three";
+function StackLogos(props) {
+  const mesh = useRef();
+  useFrame(() => (mesh.current.rotation.x += 0.01));
   return (
-    <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
-          </div>
-    </div>
+    <mesh ref={mesh}>
+      <boxGeometry args={[2, 2, 2]} />
+      <meshBasicMaterial color="orange" />
+    </mesh>
   );
 }
 
