@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters";
-import StackLogos from "../StackLogos/StackLogos";
-import { Canvas, useFrame } from "@react-three/fiber";
 
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -89,11 +87,7 @@ function About() {
             </li>
           </ul>
         </div>
-        <Canvas>
-          <ambientLight />
-          <pointLight position={[10,10,10]} />
-          <StackLogos />
-        </Canvas>
+        <div className="wrapper-cube"></div>
       </div>
     </div>
   );
