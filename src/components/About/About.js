@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters";
+import {
+  faAngular,
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faReact
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -41,53 +50,71 @@ function About() {
             сделанных там, я могу выделить создание лендинга c использованием
             Angular Material.
           </p>
-          <h3>Мои хард скиллы:</h3>
-          <ul>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`RxJs`}
-                idx={1}
-              />
-            </li>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`TypeScript`}
-                idx={5}
-              />
-            </li>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`Angular Material`}
-                idx={10}
-              />
-            </li>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`SCSS`}
-                idx={15}
-              />
-            </li>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`Node JS (Express)`}
-                idx={25}
-              />
-            </li>
-            <li>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`Mongo DB`}
-                idx={35}
-              />
-            </li>
-          </ul>
         </div>
-        <div className="wrapper-cube"></div>
+        <div className="icons-zone">
+          <div className="face1 skills-wrapper">
+            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+          </div>
+          <div className="face2 skills-wrapper">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
+          <div className="face3 skills-wrapper">
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+          </div>
+          <div className="face4 skills-wrapper">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face5 skills-wrapper">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+          </div>
+          <div className="face6 skills-wrapper">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+          </div>
+          {/* <ul>
+              <li>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={`RxJs`}
+                  idx={1}
+                />
+              </li>
+              <li>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={`TypeScript`}
+                  idx={5}
+                />
+              </li>
+              <li>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={`Angular Material`}
+                  idx={5}
+                />
+              </li>
+              <li>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={`SCSS`}
+                  idx={5}
+                />
+              </li>
+              <li>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={`Node JS (Express)`}
+                  idx={5}
+                />
+              </li>
+              <li>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={`Mongo DB`}
+                  idx={5}
+                />
+              </li>
+            </ul> */}
+        </div>
       </div>
     </div>
   );

@@ -1,17 +1,10 @@
 @import "../../mixins.scss";
 .nav-bar {
+  background-color: black;
   grid-area: sidenav;
   display: grid;
   justify-items: center;
   padding: 5px;
-  .logo {
-    img {
-      display: block;
-      width: 24px;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
 
   nav {
     display: flex;
@@ -23,10 +16,10 @@
       @include a-icon-styles;
 
       &:hover {
-        color: $primary-color;
+        color: $second-color;
 
         svg {
-          color: $primary-color;
+          color: $second-color;
         }
 
         &:after {
@@ -63,11 +56,11 @@
 
     a.active {
       svg {
-        color: $primary-color;
+        color: $second-color;
       }
 
       &::after {
-        color: $primary-color;
+        color: $second-color;
         opacity: 1;
       }
     }
