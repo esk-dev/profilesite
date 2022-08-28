@@ -27,12 +27,14 @@
 }
 @mixin btn {
   color: $second-color;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 4px;
   text-decoration: none;
   padding: 10px 10px;
   border: 1px solid $second-color;
+  text-align: center;
+  width: 30%;
   cursor: pointer;
   &:hover {
     color: $text-color;

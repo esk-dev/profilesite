@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
+  will-change: contents;
   .image-box {
     grid-column: 1/8;
     grid-area: 1 / 1 / -1 / 7;
@@ -15,14 +16,14 @@
       margin: auto auto;
       border-radius: 5px;
       -webkit-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
-        -moz-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
-        box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
-      transition: all 0.5s ease-out;
+      -moz-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
+      box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
+      transition: all 0.5s linear;
       cursor: pointer;
     }
-  }
-  img:hover {
-    filter: blur(2px) brightness(0.8);
+    img:hover {
+      filter: blur(1px) brightness(0.8);
+    }
   }
   .content-box {
     display: flex;
@@ -59,6 +60,14 @@
         gap: 5px;
         li {
           list-style: none;
+        }
+      }
+      .link-icon {
+        font-size: 32px;
+        transition: all 0.5s;
+        color: black;
+        &:hover {
+          color: $second-color;
         }
       }
     }

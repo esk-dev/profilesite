@@ -17,7 +17,7 @@ function About() {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 4000);
+    }, 1000);
   }, []);
 
   return (

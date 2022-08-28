@@ -24,12 +24,12 @@ const Home = () => {
         <AnimatedLetters
         letterClass={letterClass}
         strArray={'Меня зовут Егор'}
-        idx={8}/>
+        idx={1}/>
         <br/>
         <AnimatedLetters
         letterClass={letterClass}
         strArray={'Я - Junior Frontend Developer'}
-        idx={15}
+        idx={1}
         />
         </h1>
         <h2> Java Script / Angular</h2>
