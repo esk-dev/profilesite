@@ -12,9 +12,9 @@ import {
   faGithub,
   faGoogle
 } from "@fortawesome/free-brands-svg-icons";
-import "./Sidebar.scss";
+import "./Navbar.scss";
 
-const Sidebar = () => {
+const Navbar = () => {
   return (
     <div className="nav-bar">
       <nav>
@@ -82,4 +82,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Navbar;

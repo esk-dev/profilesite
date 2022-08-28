@@ -29,8 +29,7 @@ const Home = () => {
         <AnimatedLetters
         letterClass={letterClass}
         strArray={'Я - Junior Frontend Developer'}
-        idx={1}
-        />
+        idx={1}/>
         </h1>
         <h2> Java Script / Angular</h2>
         <Link to="/contact" className="flat-button">CONTACT ME</Link>
