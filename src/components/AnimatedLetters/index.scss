@@ -2,23 +2,23 @@
 .text-animate {
     display: inline-block;
     opacity: 0;
-    animation: bounceIn 1s;
+    animation: bounceIn 1.5s alternate;
     animation-fill-mode: forwards;
-    min-width: 5px;
+    min-width: 10px;
 }
 
 .text-animate-hover {
-    min-width: 5px;
+    min-width: 10px;
     display: inline-block;
-    animation-fill-mode: both;
-
+    animation-fill-mode: backwards;
     &:hover {
+        animation-fill-mode: backwards;
         animation: rubberBand 1s;
-        color: $primary-color;
+        color: $second-color;
     }
 }
 
-@for $i from 1 through 2000 {
+@for $i from 1 through 50 {
     .text-animate._#{$i} {
         animation-delay: #{$i*50}ms;
     }

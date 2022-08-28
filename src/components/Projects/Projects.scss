@@ -5,7 +5,7 @@
         padding: 20px;
         h1 {
             @include title-page;
-            text-align: center;
+            text-align: left;
         }
     }
     .projects-container {

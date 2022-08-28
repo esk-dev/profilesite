@@ -28,17 +28,12 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .home-page{
         .text-zone {
-            align-items: center;
 
             h1 {
-                text-align: center;
-
-            }
-            h2 {
-
+                font-size: 34px;
             }
         }
     }

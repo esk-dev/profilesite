@@ -5,12 +5,12 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faCode,
+  faCode
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
-  faGoogle,
+  faGoogle
 } from "@fortawesome/free-brands-svg-icons";
 import "./Sidebar.scss";
 
@@ -18,11 +18,8 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <nav>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          to="/">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        <NavLink exact="true" activeclassname="active" to="/">
+          <FontAwesomeIcon icon={faHome} color="#ffff" />
         </NavLink>
         <NavLink
           exact="true"
@@ -30,7 +27,7 @@ const Sidebar = () => {
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faUser} color="#ffff" />
         </NavLink>
         <NavLink
           exact="true"
@@ -38,7 +35,7 @@ const Sidebar = () => {
           className="projects-link"
           to="/projects"
         >
-          <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faCode} color="#ffff" />
         </NavLink>
         <NavLink
           exact="true"
@@ -46,7 +43,7 @@ const Sidebar = () => {
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faEnvelope} color="#ffff" />
         </NavLink>
         {/* <ul>
           <li>
