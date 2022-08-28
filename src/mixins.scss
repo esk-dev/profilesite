@@ -10,7 +10,6 @@
   display: block;
   position: relative;
   text-decoration: none;
-  width: 100px;
   transition: all 0.2s ease-out;
 }
 
@@ -34,7 +33,6 @@
   padding: 10px 10px;
   border: 1px solid $second-color;
   text-align: center;
-  width: 30%;
   cursor: pointer;
   background: none;
   &:hover {
