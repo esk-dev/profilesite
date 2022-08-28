@@ -51,69 +51,27 @@ function About() {
             Angular Material.
           </p>
         </div>
-        <div className="icons-zone">
-          <div className="face1 skills-wrapper">
-            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+        <div className="scene">
+          <div className="icons-zone">
+            <div className="face1 skills-wrapper">
+              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+            </div>
+            <div className="face2 skills-wrapper">
+              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            </div>
+            <div className="face3 skills-wrapper">
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            </div>
+            <div className="face4 skills-wrapper">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+            <div className="face5 skills-wrapper">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
+            <div className="face6 skills-wrapper">
+              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            </div>
           </div>
-          <div className="face2 skills-wrapper">
-            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-          </div>
-          <div className="face3 skills-wrapper">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-          </div>
-          <div className="face4 skills-wrapper">
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-          </div>
-          <div className="face5 skills-wrapper">
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-          </div>
-          <div className="face6 skills-wrapper">
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-          </div>
-          {/* <ul>
-              <li>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={`RxJs`}
-                  idx={1}
-                />
-              </li>
-              <li>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={`TypeScript`}
-                  idx={5}
-                />
-              </li>
-              <li>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={`Angular Material`}
-                  idx={5}
-                />
-              </li>
-              <li>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={`SCSS`}
-                  idx={5}
-                />
-              </li>
-              <li>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={`Node JS (Express)`}
-                  idx={5}
-                />
-              </li>
-              <li>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={`Mongo DB`}
-                  idx={5}
-                />
-              </li>
-            </ul> */}
         </div>
       </div>
     </div>
