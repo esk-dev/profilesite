@@ -9,9 +9,11 @@ const Home = () => {
       <div className="text-zone">
         <h1>
         Привет,
-        <br/>
+        </h1>
+        <h1>
         Меня зовут Егор
-        <br/>
+        </h1>
+        <h1>
         Я - Frontend Developer
         </h1>
         <h2> Java Script / Angular</h2>

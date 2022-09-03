@@ -19,16 +19,33 @@
     margin: 0;
 
     li {
-      a {
-        @include a-icon-styles;
+      .resume {
+        position: relative;
+        width: 100px;
+        &::after {
+          content: "Resume";
+          position: absolute;
+          text-align: center;
+          font-size: 14px;
+          left: -10px;
+          bottom: -18px;
+          opacity: 0;
+          color: $second-color;
+        }
 
         &:hover {
-          svg {
-            color: $primary-color;
-          }
-
-          &:after {
+          &::after {
             opacity: 1;
+            animation: shakeY 5s infinite ease-in-out;
+          }
+        }
+      }
+      a {
+        @include a-icon-styles;
+        &:hover {
+          svg {
+            color: $second-color;
+            animation: shakeY 5s infinite ease-in-out;
           }
         }
       }

@@ -5,7 +5,7 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faCode
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.scss";
 
@@ -15,6 +15,7 @@ const Navbar = () => {
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#ffff" />
+          <h2>HOME</h2>
         </NavLink>
         <NavLink
           exact="true"
@@ -23,6 +24,7 @@ const Navbar = () => {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#ffff" />
+          <h2>ABOUT</h2>
         </NavLink>
         <NavLink
           exact="true"
@@ -31,6 +33,7 @@ const Navbar = () => {
           to="/projects"
         >
           <FontAwesomeIcon icon={faCode} color="#ffff" />
+          <h2>PROJECTS</h2>
         </NavLink>
         <NavLink
           exact="true"
@@ -39,6 +42,7 @@ const Navbar = () => {
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#ffff" />
+          <h2>CONTACTS</h2>
         </NavLink>
       </nav>
     </div>

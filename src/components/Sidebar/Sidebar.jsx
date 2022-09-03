@@ -2,9 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faGoogle
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import './Sidebar.scss'
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import Resume from "./../../assets/resume.pdf";
+import "./Sidebar.scss";
 export default function Sidebar() {
   return (
     <aside className="sidebar">
@@ -37,6 +39,11 @@ export default function Sidebar() {
             className="google"
           >
             <FontAwesomeIcon icon={faGoogle} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a className="resume" href={Resume} target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFilePdf} color="#4d4d4e" />
           </a>
         </li>
       </ul>

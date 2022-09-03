@@ -1,16 +1,16 @@
 @import "../../mixins.scss";
 .project-card {
-  margin: 15px auto;
+  margin: 0 auto;
   height: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
-  will-change: contents;
+  will-change: auto;
   .image-box {
     grid-column: 1/8;
     grid-area: 1 / 1 / -1 / 7;
+    animation: backInLeft 2s ease-in-out;
     img {
-      animation: backInLeft 2s backwards ease-in-out;
       width: 100%;
       height: auto;
       margin: auto auto;
@@ -18,10 +18,10 @@
       -webkit-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
       -moz-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
       box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
-      transition: all 0.5s linear;
       cursor: pointer;
     }
     img:hover {
+      transition: filter .5s ease-in;
       filter: blur(1px) brightness(0.8);
     }
   }
@@ -43,11 +43,12 @@
       }
 
       .text-box {
-        animation: backInRight 2s backwards ease-in-out;
-        background-color: rgb(134 187 216 / 0.5);
+        animation: backInRight 1s ease-in-out;
+        background-color: rgb(134 187 216);
         padding: 20px;
         border-radius: 5px;
         font-size: 18px;
+        font-weight: 600;
         color: $text-color;
         -webkit-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
         -moz-box-shadow: 5px 5px 5px -2px rgba(34, 60, 80, 0.6);
@@ -64,9 +65,9 @@
       }
       .link-icon {
         font-size: 32px;
-        transition: all 0.5s;
         color: black;
         &:hover {
+          transition: color 0.5s;
           color: $second-color;
         }
       }
