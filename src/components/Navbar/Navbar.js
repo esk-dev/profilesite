@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="nav-bar">
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faHome} color="#ffff" />
+          {/* <FontAwesomeIcon icon={faHome} color="#ffff" /> */}
           <h2>HOME</h2>
         </NavLink>
         <NavLink
@@ -23,7 +23,7 @@ const Navbar = () => {
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="#ffff" />
+          {/* <FontAwesomeIcon icon={faUser} color="#ffff" /> */}
           <h2>ABOUT</h2>
         </NavLink>
         <NavLink
@@ -32,7 +32,7 @@ const Navbar = () => {
           className="projects-link"
           to="/projects"
         >
-          <FontAwesomeIcon icon={faCode} color="#ffff" />
+          {/* <FontAwesomeIcon icon={faCode} color="#ffff" /> */}
           <h2>PROJECTS</h2>
         </NavLink>
         <NavLink
@@ -41,7 +41,7 @@ const Navbar = () => {
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#ffff" />
+          {/* <FontAwesomeIcon icon={faEnvelope} color="#ffff" /> */}
           <h2>CONTACTS</h2>
         </NavLink>
       </nav>
