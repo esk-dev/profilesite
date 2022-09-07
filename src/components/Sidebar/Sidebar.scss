@@ -1,0 +1,70 @@
+@import "../../mixins.scss";
+.sidebar {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  top: 50%;
+  height: min-content;
+  width: min-content;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      .resume {
+        position: relative;
+        width: 100px;
+        &::after {
+          content: "Resume";
+          position: absolute;
+          text-align: center;
+          font-size: 14px;
+          left: -10px;
+          bottom: -18px;
+          opacity: 0;
+          color: $second-color;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+            animation: shakeY 5s infinite ease-in-out;
+          }
+        }
+      }
+      a {
+        @include a-icon-styles;
+        &:hover {
+          svg {
+            color: $second-color;
+            animation: shakeY 5s infinite ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: grid;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    grid-row-start: 3;
+    grid-template-columns: 1fr;
+    width: auto;
+    ul {
+      flex-direction: row;
+    }
+  }
+}

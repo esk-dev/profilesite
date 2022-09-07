@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
+import AnimatedLetters from "../AnimatedLetters";
 import "./Contact.scss";
 import sendForm from "../../acitons/sendForm";
 import { Formik, Field, Form, ErrorMessage } from "formik";
@@ -6,12 +7,27 @@ import * as Yup from "yup";
 
 export default function Contact() {
   const btn = useRef(null);
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 3500);
+  }, []);
+
   return (
     <div className="container contact-form">
-      <h1 className="title">Контакты</h1>
+      <h1 className="title">
+        <AnimatedLetters
+          letterClass={letterClass}
+          strArray={`Контакты`}
+          idx={1}
+        /></h1>
       <div className="content-wrapper">
-        <div clasName="text-wrapper">
-          <p></p>
+        <div className="text-wrapper">
+          <p>
+            Я заинтересован в своем развитии, поэтому нахожусь в поисках работы или проектов где смогу получить опыт и новые навыки. Для связи со мной вы можете использовать форму.
+          </p>
         </div>
         <Formik
           initialValues={{
